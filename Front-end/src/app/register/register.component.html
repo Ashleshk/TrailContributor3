@@ -1,0 +1,56 @@
+<!-- <p>register works!</p> -->
+<div class="card">
+    <form #myForm="ngForm" (ngSubmit)="doRegister()">
+        <!-- {{myForm.value|json}} -->
+        <!-- <hr> -->
+        <!-- {{user|json}} -->
+       <div class="container">
+           <label for="userName">Name</label>
+           <input type="text" #userName="ngModel" minlength="5" id="userName" [(ngModel)]=user.userName  name="userName" placeholder="Enter Username" required/>
+           <!-- {{userName.className}}<br> -->
+           <div style="color: red;"  *ngIf="(userName.invalid && userName.dirty) || userName.touched">
+                   <div *ngIf="userName.errors?.required">Name cannot be empty.</div>
+                   <div *ngIf="userName.errors?.minlength || userName.value.length==0">minimum 5 characters required.</div>
+           </div>
+           <!-- touched={{userName.touched}}
+           dirty={{userName.dirty}}
+           pristine={{userName.pristine}}
+           valid={{userName.valid}} -->
+           <br>
+           <label for="userPass">Password</label>
+           <input type="password" required #userPassword="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="userPass" [(ngModel)]=user.userPass name="userPass" placeholder="Enter Password"/>
+           <div style="color:red;" *ngIf="userPassword.invalid && (userPassword.dirty || userPassword.touched)">
+               <div style="color:red;" *ngIf="userPassword.errors?.required">Password cannot be empty.</div>
+                <div style="color:red;" *ngIf="userPassword.errors?.pattern">Not a Strong password</div>
+           </div>
+   
+   
+           <label for="userEmail">Email</label>
+           <input type="email" id="userEmail" #userEmail="ngModel" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]=user.userEmail name="userEmail" placeholder="Enter Email Address"/>
+           <div style="color:red;" *ngIf="userEmail.errors?.pattern">Invalid Email Pattern.</div>
+   
+           <label for="userPhone">Phone</label>
+           <input type="tel" id="userPhone" #userPhone="ngModel" required pattern="^\d{10}$" [(ngModel)]=user.userPhone name="userPhone" placeholder="Enter Mobile Number"/>
+           <div *ngIf="userPhone.invalid && (userPhone.touched || userPhone.dirty)">
+               <div style="color: red;" *ngIf="userPhone.errors?.required">Number cannot be empty</div>
+               <div style="color: red;" *ngIf="userPhone.errors?.pattern">Must contain 10 number</div>
+               <div style="color:red" *ngIf="userPhone.invalid">Invalid Phone mumber</div>
+           </div>
+         
+           
+           <label for="userCity">City</label>
+           <select name="userCity" id="userCity" #userCity="ngModel" required [(ngModel)]=user.userCity >
+               <option value="" disabled>Select a City</option>
+               <option value="{{ct}}" *ngFor="let ct of cities">{{ct}}</option>
+           </select>
+           <div>
+               <div style="color:red;" *ngIf="(userCity.invalid && userCity.dirty) || userCity.touched"></div>
+               <div style="color: red;" *ngIf="userCity.errors?.required">Please select city</div>
+           </div>
+           <button [disabled]="myForm.invalid" type="submit">Register</button>
+      
+       </div>
+       
+   
+   </form>
+</div>

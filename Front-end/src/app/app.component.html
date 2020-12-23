@@ -1,1 +1,20 @@
-<h1>sdfnpm</h1>
+ <div class="header">
+        <h1>Welcome to LTI</h1>    
+  </div>
+
+  <div class="topnav">
+        <ul>
+        <li><a [routerLink]="['/Home']">Home</a></li>
+        <li><a [routerLink]="['/Register']">Register</a></li>
+        <li><a [routerLink]="['/Login']">Login</a></li>
+        <li><img src="./assets/image/lti.jpg" style="float: right; padding-right: 20px; height:50px"></li>
+        </ul>
+  </div>
+  <div class="main">
+    <router-outlet></router-outlet> 
+    <!-- <app-home></app-home> -->
+  </div>
+
+  <div class="footer">
+        <p>© 2020 Larsen & Toubro Infotech Limited</p>
+  </div>    
