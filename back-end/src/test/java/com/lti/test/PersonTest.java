@@ -17,7 +17,7 @@ public class PersonTest {
 	@Test
 	public void addAPerson() {
 		Person person = new Person();
-		person.setPersonName("Rockey");
+		person.setPersonName("Swasthik");
 		person.setPersonCity("indore");
 		person.setPersonAge(21);
 		//personDao.addOrUpdateAPerson(person);
