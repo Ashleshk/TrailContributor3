@@ -20,7 +20,7 @@ public class PersonTest {
 		person.setPersonName("Rockey");
 		person.setPersonCity("indore");
 		person.setPersonAge(21);
-		personDao.addOrUpdateAPerson(person);
+		//personDao.addOrUpdateAPerson(person);
 	}
 	
 
@@ -31,7 +31,7 @@ public class PersonTest {
 		person.setPersonName("Mark");
 		person.setPersonCity("maxico");
 		person.setPersonAge(30);
-		personDao.addOrUpdateAPerson(person);
+		//personDao.addOrUpdateAPerson(person);
 	}
 	@Test
 	public void addANewPersonWithNewAPassport() { //if a person get added , a passport shd also get added
