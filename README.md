@@ -78,3 +78,48 @@ Example
 ```
 
 8. Commit your work and verify by going to `your branch` in `Browser Remote Repo`
+
+
+# What are We Using For Project Colloboration And Communication Other than Git
+
+1. Teams 
+    - Instantanous discussion and code related issue solving
+    - When 
+        * Once `EveryDay` OR `Alternate Days`
+    - Matarial Here in Form of Chat
+
+2. Whatsapp
+    - No Explanation required
+
+
+3. `Bitrix24`
+    - Free of Cost (yippee)
+    - Unlimited Users and 5GB Drive Storage (which i did using inviting you)
+    - Unlimited VideoConference, No Timeout(Though we will stick to Teams only)
+    - Chatting Can Be done here as well (Extreme RightPane PersonIcon)
+    - `This Got SCRUM BOARD!!` and Calender Wise Planner
+
+## How To Use Bitrix?
+1. Create Account by Gmail, Select anything or Nothing From Below Image
+
+![ORM](https://github.com/Ashleshk/BitrixResource/blob/main/ORM.JPG)
+
+2. Then You Last on DashBoard page (**Activity Stream** aka **Feed**)
+
+![Dashboard](https://github.com/Ashleshk/BitrixResource/blob/main/Capture.JPG)
+
+3. Chat Thorugh Here OR by Clicking on **Chat and Calls**
+
+![Chat and Calls](https://github.com/Ashleshk/BitrixResource/blob/main/Capture2.JPG)
+
+4. Click on Tasks And Project 
+
+![Task and Project](https://github.com/Ashleshk/BitrixResource/blob/main/tempsnip.png)
+
+5. In Projects section find our project and then move to KANBAN tab, you will see below
+
+![kanban View](https://github.com/Ashleshk/BitrixResource/blob/main/kanbanview.JPG)
+
+6. You Can Always Drag Left menu to your needs 
+
+![like mine](https://github.com/Ashleshk/BitrixResource/blob/main/myview.JPG)
