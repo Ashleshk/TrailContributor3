@@ -78,3 +78,28 @@ Example
 ```
 
 8. Commit your work and verify by going to `your branch` in `Browser Remote Repo`
+
+
+# What are We Using For Project Colloboration And Communication Other than Git
+
+1. Teams 
+    - Instantanous discussion and code related issue solving
+    - When 
+        * Once `EveryDay` OR `Alternate Days`
+    - Matarial Here in Form of Chat
+
+2. Whatsapp
+    - No Explanation required
+
+
+3. `Bitrix24`
+    - Free of Cost (yippee)
+    - Unlimited Users and 5GB Drive Storage 
+    - Unlimited VideoConference (Though we will stick to Teams only)
+    - Chatting Can Be done here as well (Extreme RightPane PersonIcon)
+    - `This Got SCRUM BOARD!!` and Calender Wise Planner
+
+## How To Use Bitrix?
+* Create Account by Gmail, Select anything or Nothing From Below Image
+
+![ORM](https://github.com/Ashleshk/BitrixResource/blob/main/ORM.JPG)
