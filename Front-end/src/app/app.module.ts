@@ -10,16 +10,18 @@ import { AppComponent } from './app.component';
 //import { SuccessComponent } from './success/success.component';
 //import { ErrorComponent } from './error/error.component';
 //import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { ForgotUserIDComponent } from './forgot-user-id/forgot-user-id.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
+import { ForgotUserIDComponent } from './components/forgot-user-id/forgot-user-id.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { SetNewPswComponent } from './components/set-new-psw/set-new-psw.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     ForgotUserIDComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    SetNewPswComponent
   ],
   imports: [
     BrowserModule,
