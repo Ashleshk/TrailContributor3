@@ -39,7 +39,7 @@ body{
     margin: 10px 0 18px 0;
     padding: 0 10px;
 }
-.container form .btn{
+.container form .btn1{
     margin-left: 10%;
     border: 2px solid black;
 }
@@ -56,17 +56,16 @@ body{
             <h2 > Forgot UserID</h2><br>
             <div class="form-group">   
                 <label>Enter Account Number *</label>
-                <input type="text" class="form-ctrl" placeholder="Enter your account number" name="accountNo" required> 
+                <input type="text" class="form-ctrl" placeholder="Enter your account number" name="accountNo" required/> 
             </div> 
             <div class="form-group">
                 <label>Enter OTP </label>   
-                <input type="password"  class="form-ctrl" placeholder="Enter OTP" required>  
+                <input type="password"  class="form-ctrl" placeholder="Enter OTP" required/>  
             </div> <br>
-            <button type="submit" class="btn">Back</button> 
-                <button type="submit" class="btn">Proceed</button> 
-               
-
-           </div>
+            <div>
+            <button [routerLink]="['/Login']" type="submit" class="btn">Back</button> 
+            <button type="submit" class="btn">Proceed</button> 
+            </div>
         </form>    
     </div> 
 </body>
